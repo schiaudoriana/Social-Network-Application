@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="356.0" prefWidth="632.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.controller.EditUserController">
+    <children>
+        <Label layoutX="69.0" layoutY="58.0" prefHeight="44.0" prefWidth="254.0"
+               text="TRIMITE CERERE DE PRIETENIE PENTRU UN UTILIZATOR" textAlignment="CENTER" textFill="#1b285e"
+               wrapText="true">
+            <font>
+                <Font name="Bell MT" size="14.0"/>
+            </font>
+            <effect>
+                <Blend/>
+            </effect>
+        </Label>
+        <TextField fx:id="textFieldEditFirstName" layoutX="171.0" layoutY="142.0" prefHeight="35.0" prefWidth="306.0"/>
+        <TextField fx:id="textFieldEditLastName" layoutX="171.0" layoutY="195.0" prefHeight="35.0" prefWidth="306.0"/>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="69.0" layoutY="150.0" prefHeight="18.0"
+               prefWidth="82.0" text="Nume" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+            <font>
+                <Font name="Bell MT" size="16.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="69.0" layoutY="203.0" prefHeight="18.0" prefWidth="82.0" text="Prenume"
+               wrapText="true">
+            <font>
+                <Font name="Bell MT" size="16.0"/>
+            </font>
+        </Label>
+        <Button fx:id="buttonSendRequest" blendMode="DARKEN" layoutX="303.0" layoutY="266.0" mnemonicParsing="false"
+                onAction="#handleClickSendRequest" prefHeight="35.0" prefWidth="150.0" text="Trimite cerere"
+                textFill="#211754">
+            <font>
+                <Font name="Bell MT Bold" size="14.0"/>
+            </font>
+            <effect>
+                <DropShadow>
+                    <color>
+                        <Color red="0.8236842155456543" green="0.6055604219436646" blue="0.6528205871582031"/>
+                    </color>
+                </DropShadow>
+            </effect>
+        </Button>
+        <ImageView fitHeight="123.0" fitWidth="233.0" layoutX="378.0" layoutY="8.0" pickOnBounds="true">
+            <Image url="@../images/friends.jpg"/>
+        </ImageView>
+
+
+    </children>
+</AnchorPane>

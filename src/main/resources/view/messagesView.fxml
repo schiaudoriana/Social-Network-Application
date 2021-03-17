@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/style2.css"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="socialnetwork.controller.MessagesController">
+    <children>
+        <TableView fx:id="tableViewMessages" layoutX="12.0" layoutY="102.0" prefHeight="284.0" prefWidth="575.0">
+            <columns>
+                <TableColumn fx:id="tableColumnId" prefWidth="53.60000801086426" text="ID"/>
+                <TableColumn fx:id="tableColumnFrom" prefWidth="146.5999984741211" text="From"/>
+                <TableColumn fx:id="tableColumnMessage" prefWidth="185.0" text="Mesaj"/>
+                <TableColumn fx:id="tableColumnDate" prefWidth="122.60006713867188" text="Date"/>
+                <TableColumn fx:id="tableColumnReply" prefWidth="71.0" text="Reply ID"/>
+            </columns>
+        </TableView>
+        <Label fx:id="labelUser" layoutX="12.0" layoutY="27.0" prefHeight="38.0" prefWidth="162.0" text="Inbox"
+               textAlignment="CENTER" wrapText="true"/>
+        <Button fx:id="buttonStartConversation" layoutX="188.0" layoutY="33.0" mnemonicParsing="false"
+                onAction="#handleClickStartConversation" prefHeight="26.0" prefWidth="130.0" text="Incepe conversatie"
+                textAlignment="CENTER"/>
+        <Button fx:id="buttonReplyMessage" layoutX="329.0" layoutY="33.0" mnemonicParsing="false"
+                onAction="#handleClickReplyMessage" prefHeight="26.0" prefWidth="124.0" text="Raspunde mesaj"/>
+        <Button fx:id="buttonReplyAll" layoutX="463.0" layoutY="33.0" mnemonicParsing="false"
+                onAction="#handleClickReplyAll" prefHeight="26.0" prefWidth="124.0" text="Reply All"/>
+    </children>
+</AnchorPane>

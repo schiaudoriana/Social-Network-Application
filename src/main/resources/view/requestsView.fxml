@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="664.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.controller.RequestsController">
+    <children>
+        <TableView fx:id="tableViewRequests" layoutX="215.0" layoutY="27.0" prefHeight="346.0" prefWidth="442.0">
+            <columns>
+                <TableColumn fx:id="tableColumnFirstName" prefWidth="118.79998779296875" text="First Name"/>
+                <TableColumn fx:id="tableColumnLastName" minWidth="0.0" prefWidth="100.0" text="Last Name"/>
+                <TableColumn fx:id="tableColumnStatus" prefWidth="89.20001220703125" text="Status"/>
+                <TableColumn fx:id="tableColumnDate" prefWidth="132.80002441406248" text="Date"/>
+            </columns>
+        </TableView>
+        <Label fx:id="labelUser" alignment="CENTER" layoutX="32.0" layoutY="60.0" prefHeight="38.0" prefWidth="149.0"
+               text="cereri de prietenie" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+            <font>
+                <Font name="System Italic" size="12.0"/>
+            </font>
+        </Label>
+        <Button fx:id="buttonAcceptRequest" layoutX="32.0" layoutY="187.0" mnemonicParsing="false"
+                onAction="#handleClickAcceptButton" prefHeight="26.0" prefWidth="150.0" text="Accepta cerere"/>
+        <Button fx:id="buttonRejectRequest" layoutX="32.0" layoutY="226.0" mnemonicParsing="false"
+                onAction="#handleClickRejectButton" prefHeight="26.0" prefWidth="150.0" text="Respinge cerere"/>
+    </children>
+</AnchorPane>

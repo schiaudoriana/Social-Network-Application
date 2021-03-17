@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="648.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.controller.SentRequestsController">
+    <children>
+        <TableView fx:id="tableViewSentRequests" layoutX="232.0" layoutY="14.0" prefHeight="375.0" prefWidth="407.0">
+            <columns>
+                <TableColumn fx:id="tableColumnFirstName" prefWidth="100.0" text="First Name"/>
+                <TableColumn fx:id="tableColumnLastName" prefWidth="102.0" text="Last Name"/>
+                <TableColumn fx:id="tableColumnStatus" prefWidth="90.80001831054688" text="Status"/>
+                <TableColumn fx:id="tableColumnDate" prefWidth="112.20001220703125" text="Date"/>
+            </columns>
+        </TableView>
+        <Button fx:id="buttonCancelRequest" layoutX="41.0" layoutY="187.0" mnemonicParsing="false"
+                onAction="#handleClickCancelRequest" prefHeight="26.0" prefWidth="154.0" text="Anuleaza cerere"/>
+        <Label fx:id="labelRequests" layoutX="63.0" layoutY="70.0" prefHeight="36.0" prefWidth="101.0"
+               text="Cereri trimise de" textAlignment="CENTER" wrapText="true"/>
+    </children>
+</AnchorPane>

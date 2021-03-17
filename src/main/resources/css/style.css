@@ -1,0 +1,31 @@
+.root{
+    -fx-background: #F5EEF8;
+    -fx-font-family: Century;
+}
+
+.button {
+    -fx-text-fill: black;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#ABB2B9 , #273746  );
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.label {
+    -fx-font-size: 12px;
+    -fx-font-weight:bold;
+    -fx-text-fill: #212F3C;
+    -fx-background-color:#ABB2B9 ;
+}
+.table-row-cell:selected {
+    -fx-background-color:#273746 ;
+
+}
+
+.table-row-cell:selected .text {
+    -fx-fill: #ffffff;
+}
+
+
+
+

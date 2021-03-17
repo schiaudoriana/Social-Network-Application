@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="402.0" prefWidth="832.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.controller.UserController">
+    <children>
+        <TableView fx:id="tableViewUser" onMouseClicked="#handleSelectUser" prefHeight="400.0" prefWidth="264.0">
+            <columns>
+                <TableColumn fx:id="tableColumnFirstName" prefWidth="131.79998475313187" text="First name"/>
+                <TableColumn fx:id="tableColumnLastName" prefWidth="131.1999969482422" text="Last name"/>
+            </columns>
+        </TableView>
+        <Label layoutX="282.0" layoutY="102.0" prefHeight="15.0" prefWidth="37.0" text="Nume:"/>
+        <Label layoutX="273.0" layoutY="142.0" text="Prenume:" textFill="#130404"/>
+        <TextField fx:id="textFieldNume" layoutX="329.0" layoutY="95.0" prefHeight="26.0" prefWidth="156.0"/>
+        <TextField fx:id="textFieldPrenume" layoutX="329.0" layoutY="137.0" prefHeight="26.0" prefWidth="156.0"/>
+        <Button fx:id="buttonShowFriends" layoutX="304.0" layoutY="200.0" mnemonicParsing="false"
+                onAction="#handleClickButtonShowFriends" prefHeight="26.0" prefWidth="139.0" text="Afiseaza prieteni"/>
+        <TableView fx:id="tableViewFriends" layoutX="494.0" prefHeight="402.0" prefWidth="346.0">
+            <columns>
+                <TableColumn fx:id="tableColumnFriendFirstName" prefWidth="111.79998779296875"
+                             text="Friend First Name"/>
+                <TableColumn fx:id="tableColumnFriendLastName" prefWidth="114.5999755859375" text="Friend Last Name"/>
+                <TableColumn fx:id="tableColumnFriendDate" prefWidth="119.79998779296875" text="Date"/>
+            </columns>
+        </TableView>
+        <Button fx:id="buttonDeleteFriend" layoutX="383.0" layoutY="244.0" mnemonicParsing="false"
+                onAction="#handleClickDeleteButton" prefHeight="26.0" prefWidth="103.0" text="Sterge"/>
+        <Button fx:id="buttonAddFriend" layoutX="275.0" layoutY="244.0" mnemonicParsing="false"
+                onAction="#handleClickAddButton" prefHeight="26.0" prefWidth="90.0" text="Adauga"/>
+        <Label layoutX="288.0" layoutY="24.0" prefHeight="50.0" prefWidth="184.0" style="-fx-background-color: #F5EEF8;"
+               text="Bine ai venit! Introdu un nume din lista utilizatorilor" textAlignment="CENTER" textOverrun="CLIP"
+               wrapText="true">
+            <font>
+                <Font name="Bodoni MT" size="14.0"/>
+            </font>
+        </Label>
+        <Button fx:id="buttonShowRequests" layoutX="275.0" layoutY="286.0" mnemonicParsing="false"
+                onAction="#handleClickShowRequests" prefHeight="26.0" prefWidth="90.0" text="Cereri"/>
+        <Button fx:id="buttonSentRequests" layoutX="383.0" layoutY="286.0" mnemonicParsing="false"
+                onAction="#handleClickSentRequests" prefHeight="26.0" prefWidth="103.0" text="Cereri trimise"/>
+        <Button fx:id="buttonMessages" layoutX="304.0" layoutY="333.0" mnemonicParsing="false"
+                onAction="#handleClickMessages" prefHeight="26.0" prefWidth="139.0" text="Mesaje"/>
+    </children>
+</AnchorPane>
